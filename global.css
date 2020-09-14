@@ -1,4 +1,7 @@
-
+:root {
+  --primary: #0595e3;
+  --niceWhite: #eeeee;
+}
 * {
   margin: 0;
   padding: 0;
