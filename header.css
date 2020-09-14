@@ -110,7 +110,9 @@ header {
   .links {
     display: none!important;
   }
-  .dropdown:hover drop
+  .dropdown:hover .dropdown-btn a{
+    border: none;
+  }
   .dropdown:hover .links {
     box-sizing: content-box;
     display: block !important;
