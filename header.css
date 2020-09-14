@@ -8,9 +8,14 @@ header {
   padding: 0.7rem 1rem;
   border-bottom: 1px solid var(--primary);
 }
+.header__main {
+  display: flex;
+  align-items: center;
+}
 .header__logo {
   color: var(--primary);
   text-transform: uppercase;
+  margin-right: 3rem;
 }
 .header__desktop-menu ul {
   display: flex;
@@ -28,4 +33,24 @@ header {
 .header__desktop-menu ul li a:hover {
   color: var(--primaryDark);
   border-bottom: 1px solid var(--primaryDark);
+}
+.header__desktop-search form {
+  display: flex;
+  align-items: center;
+}
+.header__desktop-search input {
+  position: relative;
+  width: 100%;
+  padding: 0.4rem 0.7rem;
+  border-radius: 100px;
+  outline: none;
+  border: 1px solid #555;
+  margin-right: 0.5rem;
+  background-color: #ddd;
+}
+.header__desktop-search button {
+  position: absolute;
+  right: 1.9rem;
+  background: none;
+  border: none;
 }
