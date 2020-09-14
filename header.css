@@ -15,7 +15,12 @@ header {
 .header__logo {
   color: var(--primary);
   text-transform: uppercase;
-  margin-right: 3rem;
+  margin-right: 1.2rem;
+}
+.header__logo small {
+  font-size: 0.9rem;
+  margin-left: 3px;
+  color: var(--grey);
 }
 .header__desktop-menu ul {
   display: flex;
@@ -34,6 +39,9 @@ header {
   color: var(--primaryDark);
   border-bottom: 1px solid var(--primaryDark);
 }
+.header__desktop-search {
+  width: 15rem;
+}
 .header__desktop-search form {
   display: flex;
   align-items: center;
@@ -46,11 +54,18 @@ header {
   outline: none;
   border: 1px solid #555;
   margin-right: 0.5rem;
-  background-color: #ddd;
+  background-color: rgb(219, 219, 219);
 }
 .header__desktop-search button {
   position: absolute;
   right: 1.9rem;
   background: none;
   border: none;
+}
+.header__toggle-menu {
+  display: block;
+  width: 30px;
+}
+.header__toggle-menu span {
+  display: bloc;
 }
