@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
-  --primary: #0595e3;
+  --primary: #5E5EFF;
+  --primaryDark: #3232ed;
   --niceWhite: #eeeee;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+html {
+  font-size: 100%;
 }
 body {
   width: 100%;
-
+  min-height: 200vh;
+  background-color: var(--niceWhite);
+}
+@media (min-width: 48em) { /* 768px */
+  .global__hide-for-desktop {
+    display: none !important;
+  }
+}
+@media (max-width: 48em) { /* 768px */
+  .global__hide-for-mobile {
+    display: none !important;
+  }
 }
