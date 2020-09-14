@@ -39,6 +39,27 @@ header {
   color: var(--primaryDark);
   border-bottom: 1px solid var(--primaryDark);
 }
+.header__secondary {
+  display: flex;
+  align-items: center;
+}
+.header__button a {
+  color: var(--niceWhite);
+  background-color: var(--primary);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: color 300ms ease-in-out,
+              background-color 300ms ease-in-out;
+  border: 1px solid transparent;
+  font-size: 0.9rem!important;
+}
+.header__button a:hover {
+  color: var(--primary);
+  background-color: var(--niceWhite);
+  border: 1px solid var(--primaryDark);
+}
 .header__desktop-search {
   width: 15rem;
 }
@@ -50,6 +71,7 @@ header {
   position: relative;
   width: 100%;
   padding: 0.4rem 0.7rem;
+  padding-right: 1.6rem;
   border-radius: 100px;
   outline: none;
   border: 1px solid #555;
@@ -67,5 +89,14 @@ header {
   width: 30px;
 }
 .header__toggle-menu span {
-  display: bloc;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+}
+.header__toggle-menu span:not(:last-child) {
+  margin-bottom: 5px;
+}
+.header__mobile-menu {
+  display: none;
 }
