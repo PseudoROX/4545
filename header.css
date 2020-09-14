@@ -31,6 +31,7 @@ header {
   margin-right: 0.8rem;
 }
 .header__desktop-menu ul li a {
+
   text-decoration: none;
   color: var(--primary);
   transition: 500ms ease-in-out;
@@ -99,4 +100,28 @@ header {
 }
 .header__mobile-menu {
   display: none;
+}
+@media (min-width: 85.375em) {
+  .dropdown-btn {
+    display: none!important;
+  }
+}
+@media (max-width: 85.375em) {
+  .links {
+    display: none!important;
+  }
+  .dropdown:hover drop
+  .dropdown:hover .links {
+    box-sizing: content-box;
+    display: block !important;
+    position: absolute;
+    background-color: var(--niceWhite);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+  }
+  .dropdown:hover .links li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
 }
